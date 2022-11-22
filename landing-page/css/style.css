@@ -1,0 +1,299 @@
+/* style.css for The Odin Project - Landing Page Exercise */
+
+  /* Colors & Fonts */
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f9faf8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p, a {
+    padding: 0;
+    margin: 0;
+  }
+   
+  /* colors */
+
+  .header, 
+  .content, 
+  .footer {
+    background-color: #1f2937;
+  }
+
+  button, 
+  .cta {
+    background-color: #3882f6;
+  }
+
+  button {
+    border-color: #f9faf8;
+    color: #f9faf8;
+  }
+
+  .info, 
+  .cta-field {
+    background-color: #ffffff;
+  }
+
+  .hero-text-2, 
+  .header-right,
+  .hero-image,
+  a {
+    color: #e5e7eb;
+  }
+
+ .header-left, 
+ .hero-text-1,
+ .footer,
+ .cta-text-1,
+ .cta-text-2,
+ button {
+    color: #f9faf8
+  }
+
+  .info-header, 
+  .quote {
+    color: #1f2937;
+  }
+
+  .quote {
+    background-color: #e5e7eb;
+  }
+
+  /* Font Sizing */
+
+  .header-right,
+  .hero-text-2,
+  .cta-text-2 {
+    font-size: 18px;
+  }
+
+  .header-left,
+  .cta-text-1,
+  .footer {
+    font-size: 24px;
+  }
+
+  .info-header,
+  .quote {
+    font-size: 36px;
+  }
+
+  .hero-text-1 {
+    font-size: 48px;
+  }
+
+  /* Font Styling */
+
+  .hero-text-1,
+  .info-header {
+    font-weight: 900;
+  }
+
+  .hero-text-2 {
+    font-weight: 300;
+  }
+
+  .quote {
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .cta-text-1 {
+    font-weight: 700;
+  }
+
+  .header-right {
+    text-decoration-line: none;
+    text-decoration-color: #e5e7eb;
+  }
+
+  /* Buttons */
+
+  button {
+    border: inherit;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+  }
+
+  .hero button {
+    border: 1px solid #3882f6;
+    margin: 10px 0px;
+  }
+
+  .cta button {
+    border: 2px solid #f9faf8;
+  }
+
+  /* Header Section */
+
+  .header {
+    display: flex;
+    flex: 0;
+    height: 72px;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 10px 200px;
+  }
+
+  .header-left.header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-right {
+    justify-content: right;
+  }
+
+  .header-left {
+    justify-content: left;
+  }
+
+  /* Content Section */
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: calc(100% - (72px + 72px))
+  }
+
+  .hero {
+    display: flex;
+    padding: 40px 200px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: auto;
+    padding: 0px ;
+    margin: 0px;
+    width: 500 px;
+    font-weight: 800;
+  }
+
+  .hero-image {
+    display: flex;
+    flex: 1 0 0;
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Information Section */
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-header {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .holder {
+    display: flex;
+    justify-content: center;
+    padding: 10px 240px;
+    gap: 100px;
+  }
+
+  .card-img, .card-text {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Quote */
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+  }
+  .quote p {
+    padding: 40px;
+    max-width: 650px;
+    text-align: justify;
+    align-self: center;
+  }
+
+  .quote b {
+    text-align: right;
+    justify-self: center;
+    align-self: center;
+    max-width: 650px;
+    padding: 40px;
+  }
+
+  /* Call to action */
+
+  .cta-field {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    width: 70%;
+  }
+
+  .cta-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0px 80px;
+  }
+
+  .cta button {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 0px 80px;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    height: 72px;
+    background: #1f2937;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+    padding: 10px 80px;
+  }
+
+  
