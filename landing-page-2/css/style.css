@@ -88,8 +88,8 @@ inner-column {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 header inner-column, footer inner-column {
@@ -140,6 +140,7 @@ footer inner-column{
 
 /* COMPONENTS */
 .button {
+    font-family: sans-serif;
     display: inline-block;
     font-size: 1.2rem;
     padding: 10px 20px;
@@ -150,7 +151,6 @@ footer inner-column{
 /* MODULES */
 
 /* HEADER */
-
 header .header-voice {
     display: flex;
     flex-direction: row;
@@ -202,7 +202,6 @@ graphic-diptych text-content .button {
 }
 
 /* PRODUCTS GRID */
-
 products-grid {
     display: block;
 }
@@ -210,11 +209,30 @@ products-grid {
 products-grid .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    grid-gap: 1.5em;
+    grid-gap: 25px;
 }
 
 product-card {
     display: block;
+}
+
+/* CTA */
+
+cta-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--button-color);
+    color: var(--white);
+    padding: 40px 80px;
+    border-radius: 8px;
+}
+
+cta-box .button {
+    background-color: var(--button-color);
+    color: var(--white);
+    border: 2px solid var(--white);
+    align-self: center;
 }
 
 /* CLASSES */
@@ -235,5 +253,9 @@ product-card {
 
 .about {
     background-color: var(--light);
+}
+
+.cta {
+    background-color: var(--white);
 }
 
