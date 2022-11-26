@@ -1,0 +1,83 @@
+/* https://meyerweb.com/eric/tools/css/reset/ */
+@import "meyer-reset.css";
+
+/* SETTINGS */
+
+html {
+    --background-color: #1f2937;
+    --button-color: #3882f6;
+    --black: #333;
+    --white: #efefef;
+    --light: #e5e7eb;
+}
+
+
+
+/* SETUP */
+* { /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: border-box;
+}
+
+picture {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a {
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+/* DEV STYLES */
+
+/*
+
+body * {
+    border: 1px solid blud;
+    padding: 2px;
+}
+
+inner-column {
+    border: 8px solid orange;
+}
+graphic-diptych {
+    border: 8px solid dodgerblue;
+}
+
+header, footer, main { 
+    border: 3px solid red;
+}
+
+section {
+    border: 4px solid lime;
+}
+
+*/
+
+
+/* STRUCTURE */
+/* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
